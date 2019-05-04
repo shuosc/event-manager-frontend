@@ -10,13 +10,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { registerLocaleData } from '@angular/common';
 import zh from '@angular/common/locales/zh';
 import { EventlistComponent } from './Components/eventlist/eventlist.component';
+import { HelpComponent } from './Components/help/help.component';
 
 registerLocaleData(zh);
 
 @NgModule({
   declarations: [
     AppComponent,
-    EventlistComponent
+    EventlistComponent,
+    HelpComponent
   ],
   imports: [
     BrowserModule,
