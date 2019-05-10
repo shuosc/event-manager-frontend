@@ -1,1 +1,18 @@
-活动列表！
+<nz-table #basicTable [nzData]="allEvents">
+  <thead>
+  <tr>
+    <th>活动名称</th>
+    <th>主讲人</th>
+    <th>活动时间</th>
+    <th>活动地点</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let data of basicTable.data">
+    <td><a>{{data.eventName}}</a></td>
+    <td>{{data.lecturer}}</td>
+    <td>{{data.eventTime}}</td>
+    <td>{{data.eventPlace}}</td>
+  </tr>
+  </tbody>
+</nz-table>
