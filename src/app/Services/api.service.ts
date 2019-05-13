@@ -16,4 +16,9 @@ export class ApiService {
   getEvents() {
     return this.http.get(`${this.baseUrl}/event`);
   }
+  getEventDetail(id: number) {
+    return this.http.get(`${this.baseUrl}/event/${id}`);
+
+  }
+
 }
